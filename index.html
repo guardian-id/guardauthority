@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konfirmasi PIN Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="card">
+        <div class="header">
+            <h2>Konfirmasi PIN</h2>
+            <p>Silakan masukkan 6 digit PIN Anda untuk memproses request ini.</p>
+        </div>
+
+        <div class="form-group">
+            <label for="paramId">ID Request</label>
+            <input type="text" id="paramId" disabled placeholder="Memuat ID..." readonly>
+        </div>
+
+        <div class="form-group">
+            <label for="paramName">Nama Request</label>
+            <input type="text" id="paramName" disabled placeholder="Memuat Nama..." readonly>
+        </div>
+
+        <div class="form-group">
+            <label>PIN SL/MOD</label>
+            <div class="otp-container">
+                <input type="password" class="otp-input" maxlength="1" inputmode="numeric" pattern="[0-9]*">
+                <input type="password" class="otp-input" maxlength="1" inputmode="numeric" pattern="[0-9]*">
+                <input type="password" class="otp-input" maxlength="1" inputmode="numeric" pattern="[0-9]*">
+                <input type="password" class="otp-input" maxlength="1" inputmode="numeric" pattern="[0-9]*">
+                <input type="password" class="otp-input" maxlength="1" inputmode="numeric" pattern="[0-9]*">
+                <input type="password" class="otp-input" maxlength="1" inputmode="numeric" pattern="[0-9]*">
+            </div>
+        </div>
+
+        <button id="btnConfirm" class="btn-confirm">Confirm Share PIN</button>
+
+        <div id="statusMsg" class="status-message"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
