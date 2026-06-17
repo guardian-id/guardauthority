@@ -76,23 +76,26 @@ input:disabled {
     cursor: not-allowed;
 }
 
-/* --- STYLE BARU UNTUK KOTAK OTP --- */
+/* --- PERBAIKAN PADA KOTAK OTP (PIN) --- */
 .otp-container {
     display: flex;
     justify-content: space-between;
-    gap: 8px;
+    gap: 6px;           /* Sedikit dikecilkan dari 8px agar lebih aman di HP */
+    width: 100%;
 }
 
 .otp-input {
-    width: 50px;
-    height: 50px;
+    flex: 1;            /* Kotak akan membagi ruang secara otomatis secara adil */
+    max-width: 45px;    /* Batas lebar maksimal di PC agar tidak terlalu melar */
+    height: 48px;       /* Tinggi kotak proporsional */
     text-align: center;
-    font-size: 24px;
+    font-size: 22px;    /* Sedikit disesuaikan agar pas dengan ukuran kotak baru */
     font-weight: bold;
     border: 2px solid #cbd5e1;
     border-radius: 8px;
     outline: none;
     transition: all 0.2s;
+    min-width: 0;       /* Kunci utama agar kotak bisa menyusut fleksibel di HP tanpa jebol */
 }
 
 .otp-input:focus {
@@ -105,7 +108,7 @@ input:disabled {
     color: #94a3b8;
     border-color: #e2e8f0;
 }
-/* ---------------------------------- */
+/* -------------------------------------- */
 
 .btn-confirm {
     width: 100%;
@@ -148,4 +151,4 @@ input:disabled {
     background-color: #fee2e2;
     color: #b91c1c;
     border: 1px solid #fecaca;
-}
+} /* Memperbaiki typo titik koma (;) di luar kurung kurawal Anda tadi */
