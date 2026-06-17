@@ -1,4 +1,4 @@
-const POWER_AUTOMATE_URL = "URL_HTTP_POST_FLOW_ANDA_DI_SINI";
+const POWER_AUTOMATE_URL = "https://default9ec0d6c58a25418fb3841c77c55584.c2.environment.api.powerplatform.com:443/powerautomate/automations/direct/workflows/8bf0ecf8b73e48b5a5c2806b0de925a3/triggers/manual/paths/invoke?api-version=1&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=DdWBv5ypb1-ed9ZSlFSG1cpED4namDsCo02FrY2KktU";
 
 const idInput = document.getElementById("paramId");
 const nameInput = document.getElementById("paramName"); // DOM Baru untuk Nama
