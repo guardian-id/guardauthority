@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Konfirmasi PIN Manager</title>
+    <title>Konfirmasi Authorize</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <div class="card">
         <div class="header">
-            <h2>Konfirmasi PIN</h2>
-            <p>Silakan masukkan 6 digit PIN Anda untuk memproses request ini.</p>
+            <h2>Konfirmasi Password POS</h2>
+            <p>Silakan masukkan 6 digit authorize password POS untuk memproses request ini.</p>
         </div>
 
         <div class="form-group">
@@ -25,7 +25,7 @@
         </div>
 
         <div class="form-group">
-            <label>PIN SL/MOD</label>
+            <label>Password Authorize POS</label>
             <div class="otp-container">
                 <input type="text" class="otp-input" maxlength="1" inputmode="numeric" pattern="[0-9]*">
                 <input type="text" class="otp-input" maxlength="1" inputmode="numeric" pattern="[0-9]*">
@@ -36,7 +36,7 @@
             </div>
         </div>
 
-        <button id="btnConfirm" class="btn-confirm">Confirm Share PIN</button>
+        <button id="btnConfirm" class="btn-confirm">Confirm Share Password</button>
 
         <div id="statusMsg" class="status-message"></div>
     </div>
